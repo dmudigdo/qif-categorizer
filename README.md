@@ -26,5 +26,5 @@ Here is the pseudocode:
 
 ## To do
 
-* ~Test whether or not ClearCheckBook accepts a category field in QIF imports, and how it matches it against it's internal category classification.~
+* ~~Test whether or not ClearCheckBook accepts a category field in QIF imports, and how it matches it against it's internal category classification.~~
 * Write the program!
