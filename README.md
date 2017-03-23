@@ -1,47 +1,34 @@
 # qif-categorizer
-
-Categorizes transactions in a QIF (Quicken Interchange Format) file according to keywords in the  description field.
+This script categorizes transactions in a QIF (Quicken Interchange Format) file according to keywords in the description field.
 
 ## Motivation
-When importing a bank-generated QIF file of transactions into ClearCheckBook.com, categorization must be done manually after import. This program will insert a category field into each transaction record, according to keywords in the description field. For example, if the description field contains "Coles" or "Woolworths", the category field "Groceries" will be added.
+When importing a bank-generated QIF file of transactions into [ClearCheckBook.com](http://clearcheckbook.com), categorization normally must be done manually after import. Automating this should be straightforward, e.g. if the description field contains "Coles" or "Woolworths", the category field "Groceries" should be added.
 
 ## QIF Format
-According to [Wikipedia](https://en.wikipedia.org/wiki/Quicken_Interchange_Format#Detail_items), for each transaction, categories have an 'L' prefix, while descriptions have the 'P' prefix.
+According to [the Wikipedia entry for QIF](https://en.wikipedia.org/wiki/Quicken_Interchange_Format#Detail_items), for each transaction, categories have an 'L' prefix, while descriptions have a 'P' prefix. For example, here is the QIF entry for $6.15 spent on 25th February 2017, on McDonalds, with the category assigned to *Leisure:Eating Out*:
 
-The task then becomes a matter of looping through each transaction in a QIF file, extracting the line with an 'M' prefix, checking the existence of a given keyword in that line (e.g. does the line starting with 'M' have 'Coles' in it?), then appending an 'L' prefixed line containing the category (e.g. "LGroceries").
+    D25/02/2017
+    PMCDONALDS SOUTH PERTH - Visa Purchase - Receipt 180624
+    LLeisure:Eating Out
+    T-6.15
+    ^
 
-## Pseudocode
-Here is the pseudocode:
+## What This Script Does
+For uncategorized transactions, the task then becomes a simple matter of looping through each line in a QIF file, extracting the line with a 'P' prefix, checking the existence of a given keyword in that line (e.g. does the line starting with 'P' have 'COLES' in it?), then appending an 'L' prefixed line containing the category (e.g. "LGroceries").
 
-    for each transaction in a QIF file:
-        check the description field
-        if it contains ... then
-            insert category X
-        endif
-        if it contains ... then
-            insert category Y
-        endif
-        <etc. etc.>
-    endfor
+## My Common Transactions
 
-## To do
-
-* ~~Test whether or not ClearCheckBook accepts a category field in QIF imports, and how it matches it against it's internal category classification.~~
-* Write the program!
-
-## Common Transactions
-
-Living Expenses:Groceries and Household Consumables
+Category *Living Expenses:Groceries and Household Consumables* usually has a description that contains:
 
 * COLES
 * WOOLWORTHS
 
-Leisure:Eating Out
+Category *Leisure:Eating Out* usually has a description that contains:
 
 * SUBWAY
 * GLORIA
 
-Transportation:EZ-Link Recharge
+Category *Transportation:EZ-Link Recharge* usually has a description that contains:
 
 * SMARTRIDER
 * PUBLIC TRANSPORT

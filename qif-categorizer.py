@@ -1,14 +1,9 @@
-#    for each transaction in a QIF file:
-#        check the description field
-#        if it contains ... then
-#            insert category X
-#        endif
-#        if it contains ... then
-#            insert category Y
-#        endif
-#        <etc. etc.>
-#    endfor
-
+# QIF CATEGORIZER
+#
+# Opens a QIF file of bank transactions and adds categories according to keywords.
+# E.g. if the transaction description string contains "COLES", category is "Groceries" 
+#
+# View README.md for more details.
 
 # Open input file
 ifile = open('input.qif')
@@ -16,17 +11,17 @@ ifile = open('input.qif')
 # Open output file
 ofile = open('output.qif', 'w')
 
-# For each transaction line in the input file
+# For each line in the input file
 for line in ifile:
 
-    # If line is prefixed by 'M'...
+    # If line is prefixed by 'P'...
     if line.startswith('P'):
-        # It is a Memo, so do stuff:
+        # It is a description field, so:
 
-        # 1. Write out the Memo
+        # 1. Write out the line
         ofile.write(line)
 
-        # 2. Scan the line for 'COLES' or 'WOOLWORTHS'.
+        # 2a. Scan the line for 'COLES' or 'WOOLWORTHS'.
         #    If found, category is Groceries, write this to output file
         if 'COLES' in line or 'WOOLWORTHS' in line:
             print('Found COLES or WOOLWORTHS')
@@ -34,18 +29,28 @@ for line in ifile:
             ofile.write('L'+category+'\n')
         # endif
 
+        # 2b. Scan the line for 'SUBWAY' or 'GLORIA' or 'MCDONALDS'.
+        #    If found, category is Eating Out, write this to output file
         if 'SUBWAY' in line or 'GLORIA' in line or 'MCDONALDS' in line:
             print('Found SUBWAY or GLORIA or MCDONALDS')
             category = "Leisure:Eating Out"
             ofile.write('L'+category+'\n')
         # endif
 
-        # (write some more if statements here)        
+        # 2c. Scan the line for 'SMARTRIDER' or 'PUBLIC TRANSPORT'.
+        #    If found, category is Transportation:EZ-Link Recharge, write this to output file
+        if 'SMARTRIDER' in line or 'PUBLIC TRANSPORT' in line:
+            print('Found SMARTRIDER or PUBLIC TRANSPORT')
+            category = "Transportation:EZ-Link Recharge"
+            ofile.write('L'+category+'\n')
+        # endif
+
+        # (can write some more if statements here for other categories/keywords)        
     else:
-    # It is not a Memo, so write it straight out into the output file
+    # Else, it is not a description field, so write it straight out into the output file
         ofile.write(line)
     # endif
-#endfor
+#Endfor
 
 # Close the files
 ifile.close()
