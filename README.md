@@ -37,8 +37,8 @@ Category *Transportation:EZ-Link Recharge* usually has a description that contai
 
 Suggestions and comments are most welcome!
 
-###Hardwired Filename
+### Hardwired Filename
 Currently, the filenames are hardwired into the code. This can be made more elegant, prompting the user for an input/output filename. 
 
-###Hardwired Categories and Keywords
+### Hardwired Categories and Keywords
 Currently, the categories and keywords are hardwired into the code. I am envisaging a method whereby the categories and matching keywords are kept in a separate (.txt?) file, and then read into a data structure of some sort (a dict?). Then, we can refactor the code so that it checks each description ('P' prefixed) line against this data structure containing all the keywords and categories.
