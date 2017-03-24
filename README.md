@@ -1,5 +1,5 @@
 # qif-categorizer
-This Python script categorizes QIF (Quicken Interchange Format) bank transactions according to keywords in the description field.
+This Python script categorizes QIF (Quicken Interchange Format) bank transactions according to keywords in the description field. Tested working on Python 3.5.
 
 ## Motivation
 When importing a bank-generated QIF file of transactions into [ClearCheckBook.com](http://clearcheckbook.com), categorization normally must be done manually after import. Automating this should be straightforward, e.g. if the description field contains "Coles" or "Woolworths", the category field "Groceries" should be added.
