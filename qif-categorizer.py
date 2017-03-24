@@ -45,7 +45,8 @@ for line in ifile:
             ofile.write('L'+category+'\n')
         # endif
 
-        # (can write some more if statements here for other categories/keywords)        
+        # (can write some more if statements here for other categories/keywords)
+        # (suggestions welcome on how to make this more elegant)
     else:
     # Else, it is not a description field, so write it straight out into the output file
         ofile.write(line)
