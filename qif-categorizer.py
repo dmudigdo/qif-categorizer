@@ -23,7 +23,7 @@ for line in ifile:
 
         # 2a. Scan the line for 'COLES' or 'WOOLWORTHS'.
         #    If found, category is Groceries, write this to output file
-        if 'COLES' in line or 'WOOLWORTHS' in line:
+        if 'COLES' in line or 'WOOLWORTHS' in line or 'Woolworths' in line:
             print('Found COLES or WOOLWORTHS')
             category = "Living Expenses:Groceries and Household Consumables"
             ofile.write('L'+category+'\n')
