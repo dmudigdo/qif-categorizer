@@ -44,6 +44,14 @@ for line in ifile:
             category = "Transportation:EZ-Link Recharge"
             ofile.write('L'+category+'\n')
         # endif
+        
+        # 2e. Scan the line for 'DOME VICTORIA' or 'DOME EAST'.
+        #    If found, category is Transportation:EZ-Link Recharge, write this to output file
+        if 'DOME VICTORIA' in line or 'DOME EAST VICTORIA' in line:
+            print('Found DOME VICTORIA or DOME EAST VICTORIA')
+            category = "Leisure:Eating Out"
+            ofile.write('L'+category+'\n')
+        # endif
 
         # (can write some more if statements here for other categories/keywords)
         # (suggestions welcome on how to make this more elegant)
