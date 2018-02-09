@@ -23,16 +23,16 @@ for line in ifile:
 
         # 2a. Scan the line for 'COLES' or 'WOOLWORTHS'.
         #    If found, category is Groceries, write this to output file
-        if 'COLES' in line or 'WOOLWORTHS' in line or 'Woolworths' in line:
-            print('Found COLES or WOOLWORTHS')
+        if 'COLES' in line or 'WOOLWORTHS' in line or 'CARLISLE IGA' in line:
+            print('Found COLES or WOOLWORTHS or CARLISLE IGA')
             category = "Living Expenses:Groceries and Household Consumables"
             ofile.write('L'+category+'\n')
         # endif
 
-        # 2b. Scan the line for 'SUBWAY' or 'GLORIA' or 'MCDONALDS'.
+        # 2b. Scan the line for 'SUBWAY' or 'GLORIA' or 'MCDONALDS' or 'DOME '.
         #    If found, category is Eating Out, write this to output file
-        if 'SUBWAY' in line or 'GLORIA' in line or 'MCDONALDS' in line:
-            print('Found SUBWAY or GLORIA or MCDONALDS')
+        if 'SUBWAY' in line or 'GLORIA' in line or 'MCDONALDS' in line or 'DOME ' in line:
+            print('Found SUBWAY or GLORIA or MCDONALDS or DOME')
             category = "Leisure:Eating Out"
             ofile.write('L'+category+'\n')
         # endif
@@ -45,14 +45,6 @@ for line in ifile:
             ofile.write('L'+category+'\n')
         # endif
         
-        # 2e. Scan the line for 'DOME VICTORIA' or 'DOME EAST'.
-        #    If found, category is Transportation:EZ-Link Recharge, write this to output file
-        if 'DOME VICTORIA' in line or 'DOME EAST VICTORIA' in line:
-            print('Found DOME VICTORIA or DOME EAST VICTORIA')
-            category = "Leisure:Eating Out"
-            ofile.write('L'+category+'\n')
-        # endif
-
         # (can write some more if statements here for other categories/keywords)
         # (suggestions welcome on how to make this more elegant)
     else:
