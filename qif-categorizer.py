@@ -31,7 +31,7 @@ for line in ifile:
 
         # 2b. Scan the line for 'SUBWAY' or 'GLORIA' or 'MCDONALDS' or 'DOME '.
         #    If found, category is Eating Out, write this to output file
-        if 'SUBWAY' in line or 'GLORIA' in line or 'MCDONALDS' in line or 'DOME ' in line:
+        elif 'SUBWAY' in line or 'GLORIA' in line or 'MCDONALDS' in line or 'DOME ' in line:
             print('Found SUBWAY or GLORIA or MCDONALDS or DOME')
             category = "Leisure:Eating Out"
             ofile.write('L'+category+'\n')
@@ -39,12 +39,44 @@ for line in ifile:
 
         # 2c. Scan the line for 'SMARTRIDER' or 'PUBLIC TRANSPORT'.
         #    If found, category is Transportation:EZ-Link Recharge, write this to output file
-        if 'SMARTRIDER' in line or 'PUBLIC TRANSPORT' in line:
+        elif 'SMARTRIDER' in line or 'PUBLIC TRANSPORT' in line:
             print('Found SMARTRIDER or PUBLIC TRANSPORT')
             category = "Transportation:EZ-Link Recharge"
             ofile.write('L'+category+'\n')
         # endif
         
+        # 2d. Scan the line for 'ALDIMOBILE'.
+        #    If found, category is < 100% Peachy Expense, write this to output file
+        elif 'ALDIMOBILE' in line:
+            print('Found ALDIMOBILE')
+            category = "< 100% Peachy Expense"
+            ofile.write('L'+category+'\n')
+        # endif
+
+        # 2e. Scan the line for 'KMART'.
+        #    If found, category is < 100% Peachy Expense, write this to output file
+        elif 'KMART' in line:
+            print('Found KMART')
+            category = "Living Expenses:Household Hardware"
+            ofile.write('L'+category+'\n')
+        # endif
+
+        # 2f. Scan the line for 'AUST UNITY'.
+        #    If found, category is < 100% Peachy Expense, write this to output file
+        elif 'AUST UNITY' in line:
+            print('Found AUST UNITY')
+            category = "Health and Medical"
+            ofile.write('L'+category+'\n')
+        # endif
+
+        # 2g. Scan the line for 'AUST UNITY'.
+        #    If found, category is < 100% Peachy Expense, write this to output file
+        elif 'BETHEL CHURCH' in line:
+            print('Found BETHEL CHURCH')
+            category = "Spiritual"
+            ofile.write('L'+category+'\n')
+        # endif
+
         # (can write some more if statements here for other categories/keywords)
         # (suggestions welcome on how to make this more elegant)
     else:
