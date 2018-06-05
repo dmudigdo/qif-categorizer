@@ -9,6 +9,8 @@
 # read categories file into dictionary
 # keyphrase, category
 # e.g. "Guzman"\t"Eating Out"
+#
+# TODO: Die when categories.txt is not properly formatted as <keyword>\t<category>
 
 # open categories file
 catfile = open('categories.txt')
@@ -17,6 +19,7 @@ catfile = open('categories.txt')
 categ=dict()
 for line in catfile:
     content = line.split("\t")
+# Need a die clause here, when categories file not formatted properly!
     categ[content[0]]=content[1].rstrip()
 
 # done 

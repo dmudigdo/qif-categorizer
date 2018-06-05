@@ -1,3 +1,20 @@
 COLES	Living Expenses:Groceries and Household Consumables
+WOOLWORTHS	Living Expenses:Groceries and Household Consumables
+CARLISLE IGA	Living Expenses:Groceries and Household Consumables
+SUBWAY	Leisure:Eating Out
+GLORIA	Leisure:Eating Out
+DOME	Leisure:Eating Out
+PAPA SWEET TOOTH	Leisure:Eating Out
 MCDONALDS	Leisure:Eating Out
+SIX SPOONS	Leisure:Eating Out
 KMART	Living Expenses:Household Hardware
+IKEA	Living Expenses:Household Hardware
+BUNNINGS	Living Expenses:Household Hardware
+AUST UNITY	Health and Medical
+PARK MEDICAL	Health and Medical
+MCARE BENEFITS	Health and Medical
+BETHEL CHURCH	Spiritual
+SMARTRIDER	Transportation:EZ-Link Recharge
+PUBLIC TRANSPORT	Transportation:EZ-Link Recharge
+ALDIMOBILE	< 100% Peachy Expense
+BP EXPRESS	< 100% Peachy Expense
