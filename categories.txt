@@ -1,0 +1,3 @@
+COLES	Living Expenses:Groceries and Household Consumables
+MCDONALDS	Leisure:Eating Out
+KMART	Living Expenses:Household Hardware
