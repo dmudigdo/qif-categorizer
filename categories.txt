@@ -1,18 +1,22 @@
 COLES	Living Expenses:Groceries and Household Consumables
 WOOLWORTHS	Living Expenses:Groceries and Household Consumables
 CARLISLE IGA	Living Expenses:Groceries and Household Consumables
+KMART	Living Expenses:Household Hardware
+IKEA	Living Expenses:Household Hardware
+BUNNINGS	Living Expenses:Household Hardware
+ARMY SALVOS	Living Expenses:Clothes
 SUBWAY	Leisure:Eating Out
 GLORIA	Leisure:Eating Out
 DOME	Leisure:Eating Out
 PAPA SWEET TOOTH	Leisure:Eating Out
 MCDONALDS	Leisure:Eating Out
 SIX SPOONS	Leisure:Eating Out
-KMART	Living Expenses:Household Hardware
-IKEA	Living Expenses:Household Hardware
-BUNNINGS	Living Expenses:Household Hardware
+P9 SEEDS	Leisure:Eating Out
+VIDEO EZY	Leisure:Entertainment
 AUST UNITY	Health and Medical
 PARK MEDICAL	Health and Medical
 MCARE BENEFITS	Health and Medical
+PLINE PHARM	Health and Medical
 BETHEL CHURCH	Spiritual
 SMARTRIDER	Transportation:EZ-Link Recharge
 PUBLIC TRANSPORT	Transportation:EZ-Link Recharge
