@@ -8,6 +8,7 @@ ARMY SALVOS	Living Expenses:Clothes
 SUBWAY	Leisure:Eating Out
 GLORIA	Leisure:Eating Out
 DOME	Leisure:Eating Out
+PAPA VIETNAMESE	Leisure:Eating Out
 PAPA SWEET TOOTH	Leisure:Eating Out
 MCDONALDS	Leisure:Eating Out
 SIX SPOONS	Leisure:Eating Out
@@ -20,5 +21,6 @@ PLINE PHARM	Health and Medical
 BETHEL CHURCH	Spiritual
 SMARTRIDER	Transportation:EZ-Link Recharge
 PUBLIC TRANSPORT	Transportation:EZ-Link Recharge
+BP EXPRESS	Transportation:Petrol
+UNITED VICTORIA	Transportation:Petrol
 ALDIMOBILE	< 100% Peachy Expense
-BP EXPRESS	< 100% Peachy Expense
