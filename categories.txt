@@ -24,3 +24,4 @@ PUBLIC TRANSPORT	Transportation:EZ-Link Recharge
 BP EXPRESS	Transportation:Petrol
 UNITED VICTORIA	Transportation:Petrol
 ALDIMOBILE	< 100% Peachy Expense
+KLEENHEAT	Housing:Utilities
