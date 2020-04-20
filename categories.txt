@@ -25,3 +25,23 @@ BP EXPRESS	Transportation:Petrol
 UNITED VICTORIA	Transportation:Petrol
 ALDIMOBILE	< 100% Peachy Expense
 KLEENHEAT	Housing:Utilities
+ALDI STORES	Living Expenses:Groceries and Household Consumables
+HBF - HEALTH	Health and Medical
+POST   Cloverdale	Postage
+EAST VICTORIA PRK IGA	Leisure:Eating Out
+UTOPIA	Leisure:Eating Out
+TEA FOUNDRY	Leisure:Eating Out
+SYNERGY	Housing:Utilities
+BOBO AUST	Leisure:Eating Out
+WAI LEON AUST	Leisure:Eating Out
+FOOD ODYSSEY	Leisure:Eating Out
+OPORTO SOUTH PERTH	Leisure:Eating Out
+PRESOTEA	Leisure:Eating Out
+815 HAO	Leisure:Eating Out
+BINTANG CAFE	Leisure:Eating Out
+HJ CARLISLE	Leisure:Eating Out
+TARO TARO	Leisure:Eating Out
+HAKATA GENSUKE	Leisure:Eating Out
+G.Y.G Belmont	Leisure:Eating Out
+LIQUORLAND	Leisure:Eating Out
+Hungry Jacks	Leisure:Eating Out
